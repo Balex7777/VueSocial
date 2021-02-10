@@ -42,7 +42,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item link to="/findfreands">
+          <v-list-item link to="/friends/3">
             <v-list-item-icon>
               <v-icon>mdi-account-multiple-plus-outline</v-icon>
             </v-list-item-icon>
