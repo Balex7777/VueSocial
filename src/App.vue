@@ -14,13 +14,13 @@
       shaped
       dense
     ><v-list-item-group>
-        <v-list-item two-line link to="/user/3">
+        <v-list-item two-line link :to="`/user/${$store.state.userData.id}`">
           <v-list-item-avatar>
-            <img :src="'https://randomuser.me/api/portraits/men/3.jpg'">
+            <img :src="`https://randomuser.me/api/portraits/men/${$store.state.userData.id}.jpg`">
           </v-list-item-avatar>
           <v-list-item-content class="text-left">
             <v-list-item-title class="front-weight-black">SocialLink</v-list-item-title>
-            <v-list-item-subtitle>Зубенко Михаил</v-list-item-subtitle>
+            <v-list-item-subtitle>{{$store.state.userData.name}}</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
         <v-divider class="my-3"/>
@@ -33,7 +33,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item link to="/user/3">
+          <v-list-item link :to="`/user/${$store.state.userData.id}`">
             <v-list-item-icon>
               <v-icon>mdi-account-outline</v-icon>
             </v-list-item-icon>
@@ -86,11 +86,10 @@
 <script>
 export default {
   name: "App",
-
   components: {},
-
   data: () => ({
     nav: true,
+    title: 'SocialVue'
   }),
 };
 </script>
