@@ -14,7 +14,7 @@
       shaped
       dense
     ><v-list-item-group>
-        <v-list-item two-line link :to="`/user/${$store.state.userData.id}`">
+      <v-list-item two-line link :to="`/user/${$store.state.userData.id}`" inactive>
           <v-list-item-avatar>
             <img :src="`https://randomuser.me/api/portraits/men/${$store.state.userData.id}.jpg`">
           </v-list-item-avatar>
@@ -24,6 +24,15 @@
           </v-list-item-content>
         </v-list-item>
         <v-divider class="my-3"/>
+          <v-list-item link to="/login">
+            <v-list-item-icon>
+              <v-icon>mdi-account</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title class="text-left">Войти</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
           <v-list-item link to="/">
             <v-list-item-icon>
               <v-icon>mdi-home-outline</v-icon>
@@ -44,10 +53,10 @@
 
           <v-list-item link to="/friends/3">
             <v-list-item-icon>
-              <v-icon>mdi-account-multiple-plus-outline</v-icon>
+              <v-icon>mdi-account-multiple-outline</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title class="text-left">Найти друзей</v-list-item-title>
+              <v-list-item-title class="text-left">Друзья</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
