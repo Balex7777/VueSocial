@@ -34,3 +34,6 @@ npm run build
 ```
 npm run lint
 ```
+
+## GitHub Pages
+https://balex7777.github.io/VueSocial/
