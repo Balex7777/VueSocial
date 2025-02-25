@@ -18,7 +18,7 @@
       <v-col cols="10" class="text-left">
         <p>
           Веб-сайт:
-          <a :href="'http://' + userData.website" target="_blank">{{
+          <a :href="'https://' + userData.website" target="_blank">{{
             userData.website
           }}</a>
         </p>
@@ -90,7 +90,7 @@ export default {
     getUserData() {
       this.axios
         .get(
-          `http://jsonplaceholder.typicode.com/users/${this.userId}`
+          `https://jsonplaceholder.typicode.com/users/${this.userId}`
         )
         .then((response) => {
           this.userData = response.data;
@@ -100,7 +100,7 @@ export default {
     getUserPosts() {
       this.axios
         .get(
-          `http://jsonplaceholder.typicode.com/posts?userId=${this.userId}`
+          `https://jsonplaceholder.typicode.com/posts?userId=${this.userId}`
         )
         .then((response) => {
           this.posts = response.data;

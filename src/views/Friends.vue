@@ -66,7 +66,7 @@ export default {
     getUserData() {
       this.axios
         .get(
-          `http://jsonplaceholder.typicode.com/users/${this.$route.params.id}`
+          `https://jsonplaceholder.typicode.com/users/${this.$route.params.id}`
         )
         .then((response) => {
           this.userData = response.data;
@@ -75,7 +75,7 @@ export default {
     getUserPosts() {
       this.axios
         .get(
-          `http://jsonplaceholder.typicode.com/users`
+          `https://jsonplaceholder.typicode.com/users`
         )
         .then((response) => {
           this.users = response.data;

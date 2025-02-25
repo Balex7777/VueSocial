@@ -35,7 +35,7 @@ export default {
     authenticate() {
       this.axios
         .get(
-          `http://37.77.104.246/api/jsonstorage/?id=69f756530dfb7a35cb40936791601741`
+          `https://37.77.104.246/api/jsonstorage/?id=69f756530dfb7a35cb40936791601741`
         )
         .then((response) => {
           let users = response.data;

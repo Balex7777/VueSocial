@@ -16,7 +16,7 @@
         </v-row>
         <v-row class="text-left">
             <v-col cols="4">
-                <img src="https://c-masters.ru/storage/app/public/2020/05/17/62a15473cf9e801144e0d593fa4f094c5ead2864.jpg" style="max-width: 100%">
+                <img src="https://avatars.mds.yandex.net/i?id=639863a6548d74d0744402fd9ad61e6d-5234838-images-thumbs&n=13" style="max-width: 100%">
             </v-col>
             <v-col cols="6" class="text-left">
                 <p>
